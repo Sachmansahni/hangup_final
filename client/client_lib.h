@@ -12,6 +12,8 @@
     #pragma comment(lib, "ws2_32.lib")
 #else
     #include<unistd.h>
+    #include<ctype.h>
+    #include<arpa/inet.h>
     #include<sys/types.h>
     #include<sys/socket.h>
     #include<netinet/in.h>

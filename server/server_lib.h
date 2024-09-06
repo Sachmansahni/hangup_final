@@ -1,7 +1,7 @@
 #ifndef MAIN_HEADERS_H
 #define MAIN_HEADERS_H
 
-#include<stdio.h>
+#include<stdio.h>     //definitions of input and output
 #include<stdlib.h>
 #include<string.h>
 // #include<unistd.h>
@@ -12,12 +12,13 @@
     #pragma comment(lib, "ws2_32.lib")
 #else
     #include<unistd.h>
-    #include<sys/types.h>
-    #include<sys/socket.h>
-    #include<netinet/in.h>
+    #include<ctype.h>
+    #include<sys/types.h>       //data types used in system calls
+    #include<sys/socket.h>      //definitions of structures needed for socket
+    #include<netinet/in.h>      //constants and structures needed for internet donain addresses
     #include<netdb.h>
 #endif
-// Function prototypes
+
 void setup_server(int port);
 void run_server();
 
